@@ -28,12 +28,6 @@ in {
       default = true;
     };
 
-    defaultEditor = mkOption {
-      description = "Enable neovim as default editor";
-      type = types.bool;
-      default = true;
-    };
-
     vimAlias = mkOption {
       description = "Enable vim alias";
       type = types.bool;

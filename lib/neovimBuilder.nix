@@ -18,7 +18,7 @@ let
 in pkgs.wrapNeovim pkgs.neovim {
   viAlias = vim.viAlias;
   vimAlias = vim.vimAlias;
-  defaultEditor = vim.defaultEditor;
+
   configure = {
     customRC = vim.configRC;
 
