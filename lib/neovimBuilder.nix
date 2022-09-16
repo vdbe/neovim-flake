@@ -16,8 +16,9 @@ let
   vim = vimOptions.config.vim;
 
 in pkgs.wrapNeovim pkgs.neovim-nightly {
-  viAlias = true;
-  vimAlias = true;
+  viAlias = vim.viAlias;
+  vimAlias = vim.vimAlias;
+  defaultEditor = vim.defaultEditor;
   configure = {
     customRC = vim.configRC;
 
