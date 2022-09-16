@@ -29,7 +29,7 @@ in {
     };
 
     defaultEditor = mkOption {
-      description = "Enable neovim as defauly editor";
+      description = "Enable neovim as default editor";
       type = types.bool;
       default = true;
     };
